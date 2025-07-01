@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CodeCraft AI - Universal Code Generator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CodeCraft AI</h1>
+      <p>Build websites, apps, games & bots with AI</p>
+    </header>
+
+    <main>
+      <label for="platform">Choose Platform:</label>
+      <select id="platform">
+        <option value="website">Website</option>
+        <option value="mobile">Mobile App</option>
+        <option value="backend">Backend/API</option>
+        <option value="game">Game</option>
+        <option value="bot">Bot/Script</option>
+      </select>
+
+      <label for="aiPrompt">Describe your project:</label>
+      <textarea id="aiPrompt" placeholder="E.g. Create a React Native app with login screen"></textarea>
+
+      <div class="buttons">
+        <button id="generateBtn">Generate with AI</button>
+        <button id="downloadBtn" disabled>Download Code</button>
+        <button id="deployBtn" disabled>Deploy Website</button>
+      </div>
+
+      <label for="codeOutput">Generated Code:</label>
+      <textarea id="codeOutput" readonly placeholder="Generated code will appear here..."></textarea>
+
+      <div id="status"></div>
+    </main>
+
+    <footer>
+      <p>© 2025 Inofomoh Abdulshakur AI Solutions</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
